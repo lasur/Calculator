@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="120dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="179dp"
+        android:layout_marginTop="147dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="570dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/appName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.346" />
+
+    <LinearLayout
+        android:layout_width="193dp"
+        android:layout_height="201dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="109dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="250dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.187">
+
+        <Button
+            android:id="@+id/buttonSimple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="moveToSimpleCalc"
+            android:text="@string/buttonSimple" />
+
+        <Button
+            android:id="@+id/buttonAdvanced"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="moveToAdvanceCalc"
+            android:text="@string/buttonAdvanced" />
+
+        <Button
+            android:id="@+id/buttonAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="moveToAbout"
+            android:text="@string/buttonAbout" />
+
+        <Button
+            android:id="@+id/buttonExit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="moveToExit"
+            android:text="@string/buttonExit" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

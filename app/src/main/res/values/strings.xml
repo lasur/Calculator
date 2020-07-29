@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Kalkulator</string>
+    <string name="appName">Calculator</string>
+    <string name="buttonSimple">Simple</string>
+    <string name="buttonAdvanced">Advanced</string>
+    <string name="buttonAbout">About</string>
+    <string name="buttonExit">Exit</string>
+    <string name="button1">1</string>
+    <string name="mnozenie">*</string>
+</resources>
